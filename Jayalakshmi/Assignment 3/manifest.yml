@@ -1,6 +1,0 @@
-applications:
-- name: watson-assistant-simple
-  command: npm start
-  path: .
-  memory: 256M
-  instances: 1
