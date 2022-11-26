@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBPORTAL | HOME</title>
+    <meta charset="UTF-8">
+        <!-- favicon -->
+        <!-- <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <!-- <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-32x32.png">
+        <!-- bootstrap css cdn -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- css stylesheet -->
+        <link rel="stylesheet" href="../static/css/reg.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <!-- font styles cdn -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- bootstrap navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid menu">
+              <a class="main-logo-img mt-3" href="home"><img src="/static/img/goseek.png" alt="sheep-logo" height="180px" width="180px">
+                <!-- <a class="navbar-brand" href="index.html">JobPortal</a> -->
+              </a>
+              
+              <div class="row donate-sponsor">
+                <div class="col-6">
+                <a type="button" class="btn btn-success mr-1" id="donate" href="login">LOGIN</a>
+               </div>
+               <div class="col-6">
+                <a type="button" class="btn btn-warning mr-1" id="sponsor" href="register">REGISTER</a>
+               </div>
+              </div>
+            </div>
+          </nav>
+          <!-- navbar ends -->
+
+        <!-- what we focus on -->
+        <section class="our-focus">
+            <div class="container">
+              <h2 class="text-center mt-3"><strong>About Us</strong></h2>
+              <div class="row ml-3 mt-3">
+                <div class="col-lg-3 mr-5" id="focus-first">
+                  <div class="card" style="width: 19rem;">
+                    <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Mission</strong></h5>
+                      <p class="card-text">GoSeek is an edTech organization with a vision to bridge the gap between academia & industry. Whether you are new to the workforce, are a seasoned professional, or somewhere in between, GoSeek's contributors will help you move the needle on your career and get the job you want faster than you think.Our outcome-based experiential learning programs on emerging technologies (Internet of Things, Machine Learning, Data Science, Artificial Intelligence, Robotics) are building skilled entry - level engineers, for the corporate world.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 mr-5" id="focus-second">
+                  <div class="card" style="width: 20rem;">
+                    <!-- <img src="assets/img/friendship day.JPG" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Vision</strong></h5>
+                      <p class="card-text">Our main objective is to bridge the existing gaps between prevailing industry standards and what the academics offer to the graduates while passing out of university. SmartBridge offers suitable skill deployment and training to the young talent before on boarding their first job.
+Our skill development programs are designed considering the present expectations in the industry. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 ml-5" id="focus-third">
+                  <div class="card" style="width: 20rem;">
+                    <!-- <img src="assets/img/health camp.jpg" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Objective</strong></h5>
+                      <p class="card-text">At GoSeek, we live and breathe the belief that we can help people transform their work lives, and so do our contributors. Our experts come from a variety of backgrounds but have one thing in common: they are authorities on the job market. From journalists with years of experience covering workforce topics, to academics who study the theory behind employment and staffing, to certified resume writers whose expertise in the creation of application documents offers our readers insights into how to best wow recruiters and hiring managers, GoSeek's stable of expert writers are among the best in the business. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- focus section ends -->
+
+        <!-- footer starts -->
+          <!-- Site footer -->
+          <footer class="site-footer">
+            <div class="container mt-5">
+              <div class="row">
+
+                <div class="col-xs-6 col-md-3 footer">
+                  <h4><strong>Contact Us</strong></h4>
+                  <ul class="footer-links">
+                    <li><a href="mailto:test@gmail.com">help@goseek.com</a></li>
+                    <li><a href="tel:8977787657">+91 9238324349</a></li>
+                  </ul>
+                </div>
+             </div>
+            <hr>
+            
+                
+              </div>
+            </div>
+      </footer>
+       
+      <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "e22dcd16-3b9c-407a-90dc-0d175d6708eb", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "9f2196de-4c2c-4b82-874b-9768ad3501e4", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+          </body>
+</html>

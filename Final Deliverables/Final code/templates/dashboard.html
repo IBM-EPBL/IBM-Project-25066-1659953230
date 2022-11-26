@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBPORTAL | HOME</title>
+    <meta charset="UTF-8">
+        <!-- favicon -->
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-32x32.png">
+        <!-- bootstrap css cdn -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- css stylesheet -->
+        <link rel="stylesheet" href="../static/css/reg.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <!-- font styles cdn -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- bootstrap navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <div class="container-fluid menu">
+              <a class="main-logo-img mt-3" href="home"><img src="static/img/goseek.png" alt="sheep-logo" height="180px" width="180px">
+                <!-- <a class="navbar-brand" href="index.html">JobPortal</a> -->
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="row donate-sponsor">
+              {%if msg == False%}
+                <a type="button" class="btn btn-warning mr-1" id="sponsor" href="register">REGISTER</a>
+                <a type="button" class="btn btn-primary mr-1" id="sponsor" href="display">MY JOBS</a>
+                {%endif%}
+                <a type="button" class="btn btn-success mr-1" id="donate" href="logout">LOGOUT</a>
+              </div>
+              
+            </div>
+          </nav>
+          <!-- navbar ends -->
+
+        <!-- what we focus on -->
+        <div class="main-focus">
+        <section class="our-focus">
+            <div class="container">
+              <h2 class="text-center mt-3">Available Jobs</h2><hr>
+              <div class="row ml-3 mt-3">
+                <div class="col-lg-3 mr-5" id="focus-first">
+                  <div class="card" style="width: 19rem;">
+                    <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title" id="job-1">Python</h5>
+                      <p class="card-text">Skills for python
+                      </p>
+                      <a href="javascript:jobs(1)" class="btn btn-primary">Apply Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 mr-5" id="focus-second">
+                  <div class="card" style="width: 20rem;">
+                    <!-- <img src="assets/img/friendship day.JPG" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title" id="job-2">Data Scientist</h5>
+                      <p class="card-text">Skills for datascientist</p>
+                        <a href="javascript:jobs(2)" class="btn btn-primary">Apply Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 ml-5" id="focus-third">
+                  <div class="card" style="width: 20rem;">
+                    <!-- <img src="assets/img/health camp.jpg" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title" id="job-3">HR Manager</h5>
+                      <p class="card-text">skills for hr manager</p>
+                        <a href="javascript:jobs(3)" class="btn btn-primary">Apply Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="container">
+            <div class="row ml-3 mt-3">
+              <div class="col-lg-3 mr-5" id="focus-first">
+                <div class="card" style="width: 19rem;">
+                  <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+                  <div class="card-body">
+                    <h5 class="card-title" id="job-4">Junior Developer</h5>
+                    <p class="card-text">Skills for managing
+                    </p>
+                    <a href="javascript:jobs(4)" class="btn btn-primary">Apply Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mr-5" id="focus-second">
+                <div class="card" style="width: 20rem;">
+                  <!-- <img src="assets/img/friendship day.JPG" class="card-img-top" alt="..."> -->
+                  <div class="card-body">
+                    <h5 class="card-title" id="job-5">AI Scientist</h5>
+                    <p class="card-text">Skills for Artificial Intelligence</p>
+                      <a href="javascript:jobs(5)" class="btn btn-primary">Apply Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 ml-5" id="focus-third">
+                <div class="card" style="width: 20rem;">
+                  <!-- <img src="assets/img/health camp.jpg" class="card-img-top" alt="..."> -->
+                  <div class="card-body">
+                    <h5 class="card-title">Senior Developer</h5>
+                    <p class="card-text">Skills for managing projects</p>
+                      <a href="javascript:jobs(6)" class="btn btn-primary">Apply Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>   
+        <section class="our-focus">
+         <div class="container">
+          <div class="row ml-3 mt-3">
+            <div class="col-lg-3 mr-5" id="focus-first">
+              <div class="card" style="width: 19rem;">
+                <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-title">Java Devoloper</h5>
+                  <p class="card-text">Skills for Core Java
+                  </p>
+                  <a href="apply" class="btn btn-primary">Apply Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mr-5" id="focus-second">
+              <div class="card" style="width: 20rem;">
+                <!-- <img src="assets/img/friendship day.JPG" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-title">ML Engineer</h5>
+                  <p class="card-text">Skills for Machine Learning</p>
+                    <a href="apply" class="btn btn-primary">Apply Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 ml-5" id="focus-third">
+              <div class="card" style="width: 20rem;">
+                <!-- <img src="assets/img/health camp.jpg" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-title">Network Architect</h5>
+                  <p class="card-text">Skills for hr Data science</p>
+                    <a href="apply" class="btn btn-primary">Apply Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+    </section>
+    </div>
+    <script src="../static/js/index.js"></script>
+          <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "e22dcd16-3b9c-407a-90dc-0d175d6708eb", // The ID of this integration.
+              region: "au-syd", // The region your integration is hosted in.
+              serviceInstanceID: "9f2196de-4c2c-4b82-874b-9768ad3501e4", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+          </script>
+          </body>
+</html>
